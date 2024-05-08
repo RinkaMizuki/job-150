@@ -12,12 +12,12 @@ html {
 body {
   width: 100vw;
   overflow-x: hidden;
+  background-color: #eee;
   height: 100vh;
 }
 
 a {
   text-decoration: none;
-  color: white;
   font-size: 16px;
 }
 
@@ -179,7 +179,6 @@ a {
 }
 
 .content-container {
-  background-color: #eee;
   padding: 50px 15%;
 }
 
@@ -216,6 +215,8 @@ a {
   max-width: calc(33.33% - 10px);
   border-radius: 5px;
   position: relative;
+  display: block;
+  color: #000;
 }
 
 .tour-card-image {
@@ -288,6 +289,542 @@ a {
   background-color: #ff9832;
   font-size: 13px;
   color: white;
+}
+
+.tips_style {
+  width: 100%;
+  padding: 10px 0;
+  position: relative;
+  float: left;
+  margin: 0 -50%;
+  background: #fff;
+}
+
+.tips_center::before,
+.tips_center::after {
+  content: "";
+  background: #e5e5e5;
+  position: absolute;
+}
+
+.tips_center:before {
+  height: 1px;
+  width: 60%;
+  bottom: -3px;
+  left: 20%;
+}
+
+.tips_center:after {
+  height: 5px;
+  width: 30%;
+  bottom: -5px;
+  left: 35%;
+  border-radius: 10px;
+}
+
+.breadh2 {
+  display: block;
+  font-size: 36px;
+  font-weight: 400;
+  padding: 10px 0;
+  text-align: center;
+}
+
+.secdetail {
+  top: 30px;
+  width: 100%;
+  float: left;
+  position: relative;
+  display: block;
+  margin: 10px 0;
+}
+
+.rating_it {
+  z-index: 2;
+  bottom: 4px;
+  background: rgba(0, 0, 0, .5);
+  padding: 0 2%;
+  width: 100%;
+  line-height: 40px;
+}
+
+.discount,
+.rating_it {
+  color: #fff;
+  position: absolute;
+  display: block;
+  font-size: 14px;
+}
+
+.achat:hover,
+.achat_team:hover,
+.chatcar:hover,
+.hbook-chat:hover,
+.mb-btn a.amb2:hover,
+.mb-btn span.amb2:hover,
+.view_more_sort:hover,
+.view_profile:hover {
+  background: #a6e14b;
+}
+
+.abook1:hover,
+.abook:hover,
+.mb-btn a.amb1:hover,
+.mb-btn span.amb1:hover {
+  background: #04afe7;
+}
+
+#star {
+  float: left;
+  margin: 8px 5px 0 0;
+  height: 24px;
+  cursor: pointer;
+}
+
+.secdetail div.aimg {
+  width: 49%;
+  float: left;
+  margin: 0 2% 0 0;
+  position: relative;
+  z-index: 1;
+  display: inline-flex;
+  overflow: hidden;
+}
+
+.discount {
+  width: 100px;
+  height: 100px;
+  padding: 15px 0 0;
+  background: url("./images/discount.png") no-repeat;
+  z-index: 1;
+  top: -9px;
+  text-align: center;
+}
+
+.discount span.sper,
+.font20px {
+  font-size: 20px;
+}
+
+.discount span {
+  color: #fff !important;
+}
+
+.discount,
+.rating_it {
+  color: #fff;
+  position: absolute;
+  display: block;
+}
+
+.discount,
+.dst_2 {
+  left: -15px;
+}
+
+.get-book-title,
+.secdetail h2,
+.secdetail h3 {
+  color: #333;
+  font-size: 26px;
+  font-weight: 400;
+}
+
+.span_price {
+  width: 115px;
+  display: inline-block;
+  font-size: 16px;
+  color: #666;
+}
+
+.span_price i,
+.span_team i,
+.tourlist li p i {
+  width: 20px;
+}
+
+.fa {
+  font: normal normal normal 14px / 1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.fa,
+.fa-stack {
+  display: inline-block;
+}
+
+.span_price_detail {
+  font-size: 24px;
+  color: #ff9c00;
+
+}
+
+.bold,
+.carnote span,
+.div1 p span.spbolf,
+.statt {
+  font-weight: 700;
+}
+
+.span_price_promo {
+  font-size: 17px;
+  color: #65a626;
+}
+
+.hdis,
+.price,
+.span_price_home,
+.span_price_promo,
+.thdis {
+  text-decoration: line-through;
+}
+
+.star-3 {
+  background-position: 0 -28px;
+}
+
+.secdetail b,
+.star-hotel,
+.star-review {
+  display: inline-block;
+}
+
+.star-hotel,
+.star-review {
+  width: 62px;
+  height: 14px;
+  background: url("./images/star.png") no-repeat;
+  cursor: move;
+  text-indent: -10000px;
+}
+
+.secdetail p {
+  padding: 10px 0;
+  font-size: 16px;
+  color: #666;
+}
+
+.secdetail p.dest {
+  line-height: 20px;
+  margin: 0 0 10px;
+}
+
+.span_price i,
+.span_team i,
+.tourlist li p i {
+  width: 20px;
+}
+
+.fa-map-marker:before {
+  content: "\f041";
+}
+
+.abook,
+.abook1 {
+  background: #01b7f2;
+  border: 1px solid #0aa2d4;
+  border-bottom: 5px solid #0aa2d4;
+  border-radius: 4px;
+  float: left;
+}
+
+.abook,
+.abook1,
+.achat {
+  width: 48%;
+  padding: 13px 0;
+  color: #fff;
+  font-size: 20px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.btn_book_car,
+a:active,
+a:hover,
+a:link,
+a:visited {
+  text-decoration: none;
+}
+
+.achat {
+  background: #98ce44;
+  border: 1px solid #7fb231;
+  border-bottom: 5px solid #7fb231;
+  border-radius: 4px;
+  float: right;
+}
+
+.abook,
+.abook1,
+.achat {
+  width: 48%;
+  padding: 13px 0;
+  color: #fff;
+  font-size: 20px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.dbtn {
+  float: right;
+  width: 49%;
+}
+
+.free-ship {
+  padding: 20px 0 0 !important;
+  color: #01b7f2 !important;
+  clear: both;
+}
+
+.free-ship i {
+  width: 20px;
+  text-align: center;
+}
+
+.faa-spin.animated {
+  animation: spin 1.5s linear infinite;
+}
+
+.free-ship span {
+  font-weight: 700;
+  color: #ff5108;
+}
+
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(359deg);
+    -ms-transform: rotate(359deg);
+    transform: rotate(359deg);
+  }
+}
+
+.reviews-panel {
+  float: left;
+  padding: 15px 3%;
+  width: 94.2%;
+  position: relative;
+}
+
+.reviews-panel span.span_b {
+  font-size: 25px;
+  text-align: center;
+  padding: 10px 0 5px;
+  display: block;
+  color: #333;
+}
+
+.pnote,
+.pnoteht {
+  color: #8c8c8c;
+  font-size: 14px;
+  text-align: center;
+  padding: 0 0 10px;
+}
+
+.total-rate span.rating_sp {
+  display: block;
+  padding: 20px;
+  background: #e5e5e5;
+  text-align: center;
+  color: #000;
+  border-radius: 4px;
+  font-size: 36px;
+}
+
+.total-rate span.average {
+  font-size: 36px;
+}
+
+.total-rate p {
+  display: block;
+  text-align: center;
+  padding: 8px 0 0;
+}
+
+.total-rate h5 {
+  font-size: 16px;
+  padding: 15px 0;
+  text-align: center;
+  font-weight: 400;
+}
+
+.total-rate {
+  font-size: 17px;
+  float: left;
+  color: #8c8c8c;
+  width: 20%;
+  cursor: pointer;
+}
+
+.rate-bar {
+  width: 46%;
+  float: left;
+  margin: 0 0 0 7%;
+}
+
+ul {
+  list-style: none inside;
+}
+
+.rate-bar li {
+  width: 95.5%;
+  height: 16px;
+  clear: both;
+  margin: 0 0 6px;
+}
+
+.rate-bar p.pleft {
+  width: 100px;
+  color: #5e5e5e;
+}
+
+.rate-bar p,
+.rate-style p {
+  float: left;
+  font-size: 12px;
+}
+
+.rate-bar li i {
+  color: #fc0;
+}
+
+.rate-bar div {
+  width: 60%;
+  height: 6px;
+  margin: 4px 5px 0 0;
+  float: left;
+  border: 1px solid #ececec;
+  background: #fff;
+}
+
+.ft_tools a.af3,
+.rate-bar span.bar5 {
+  background: #01b7f2;
+}
+
+.rate-bar span {
+  width: 100%;
+  height: 6px;
+  float: left;
+  width: 37.912%;
+}
+
+.rate-bar h5,
+.rate-style h5 {
+  color: #8c8c8c;
+  font-size: 16px;
+  padding: 15px 0;
+  font-weight: 400;
+}
+
+.rate-bar p,
+.rate-style p {
+  float: left;
+  font-size: 12px;
+}
+
+.bar4 {
+  background: #01b7f2;
+  width: 62.088%;
+}
+
+.rate-style {
+  width: 22%;
+  float: right;
+}
+
+.rate-bar h5,
+.rate-style h5 {
+  font-size: 16px;
+  padding: 15px 0;
+  font-weight: 400;
+}
+
+.qapagelist,
+.qapagelist li,
+.rate-style li,
+.service-home {
+  width: 100%;
+  clear: both;
+  font-size: 14px;
+  color: #646464;
+  float: left;
+}
+
+.rate-style p.pstyle0 {
+  background-position: 0 -81px;
+}
+
+.rate-style p {
+  width: 130px !important;
+  padding: 0 0 0 24px;
+  background: url('./images/icon-style.png') no-repeat;
+  display: block;
+  line-height: 22px;
+}
+
+.rate-style span {
+  display: block;
+  float: left;
+  line-height: 22px;
+}
+
+.rate-style p.pstyle1 {
+  background-position: 0 -171px;
+}
+
+.rate-style p {
+  width: 86px;
+  padding: 0 0 0 24px;
+  background: url('/images/icon-style.png') no-repeat;
+  display: block;
+  line-height: 22px;
+}
+
+.rate-style p.pstyle2 {
+  background-position: 0 4px;
+}
+
+.rate-style p {
+  width: 86px;
+  padding: 0 0 0 24px;
+  background: url('/images/icon-style.png') no-repeat;
+  display: block;
+  line-height: 22px;
+}
+
+.rate-style p.pstyle3 {
+  background-position: 0 -38px;
+}
+
+.rate-style p {
+  width: 86px;
+  padding: 0 0 0 24px;
+  background: url('/images/icon-style.png') no-repeat;
+  display: block;
+  line-height: 22px;
+}
+
+.rate-style p.pstyle4 {
+  background-position: 0 -122px;
+}
+
+.rate-style p {
+  width: 86px;
+  padding: 0 0 0 24px;
+  background: url('./images/icon-style.png') no-repeat;
+  display: block;
+  line-height: 22px;
 }
 
 ::-webkit-scrollbar {
