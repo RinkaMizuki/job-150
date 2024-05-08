@@ -1,0 +1,291 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Roboto";
+}
+
+body {
+  width: 100vw;
+  overflow-x: hidden;
+  height: 100vh;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+}
+
+.main-container {
+  height: 75%;
+  width: 100%;
+}
+
+.header-container {
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-image: url('../150/images/banner.jpeg');
+  background-position: center;
+  background-size: cover;
+}
+
+.header-wrapper {
+  width: 100%;
+  height: 35%;
+  background: rgb(0, 0, 0);
+  /* Fallback color */
+  background: rgba(0, 0, 0, 0.4);
+  /* Black background with 0.5 opacity */
+}
+
+.header-top {
+  height: 25%;
+  border-bottom: 1px solid #24242480;
+  display: flex;
+  padding: 0 15%;
+  align-items: center;
+}
+
+.header-top-left {
+  display: flex;
+  flex: 1;
+  gap: 20px;
+}
+
+.phone-wrapper,
+.email-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.fa-phone,
+.fa-comment-dots,
+.fa-facebook-messenger,
+.email-address,
+.fa-envelope,
+.number-phone {
+  color: white;
+  font-size: 17px;
+}
+
+.tour-logo {
+  max-width: 150px;
+  height: 100%;
+  object-fit: contain;
+}
+
+.phone-icon {
+  max-width: 40px;
+  height: 40px;
+}
+
+.header-mid {
+  padding: 0 15%;
+  height: 50%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-mid-right {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+
+.phone-serve-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.phone-serve,
+.phone-serve-text {
+  color: white;
+}
+
+.phone-serve {
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.header-bot {
+  height: 25%;
+  display: flex;
+  width: 100%;
+  /* Fallback color */
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.header-nav {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  padding: 0 15%;
+}
+
+.hover-underline-animation {
+  display: inline-block;
+  position: relative;
+  color: white;
+}
+
+.hover-underline-animation::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: white;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.hover-underline-animation:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.contact-me {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  top: 35%;
+  transform: translateY(-50%);
+}
+
+.icon-wrapper {
+  padding: 10px;
+}
+
+.comment {
+  background-color: rgb(40, 67, 119);
+}
+
+.messager {
+  background-color: rgb(67, 119, 215);
+}
+
+.phone {
+  background-color: rgb(57, 210, 103);
+}
+
+.content-container {
+  background-color: #eee;
+  padding: 50px 15%;
+}
+
+.tour-wrapper {
+  background-color: white;
+  padding: 30px;
+}
+
+.tour-wrapper {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.tour-title {
+  color: #1bc285;
+}
+
+.line {
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+
+.tour-card-wrapper {
+  align-self: flex-start;
+  display: flex;
+  gap: 15px;
+  width: 100%;
+  flex: 1;
+  flex-wrap: wrap;
+}
+
+.tour-card {
+  max-width: calc(33.33% - 10px);
+  border-radius: 5px;
+  position: relative;
+}
+
+.tour-card-image {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+}
+
+.tour-card-content {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding: 10px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.tour-card-title {
+  font-size: 13px;
+}
+
+.tour-card-desc-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.fa-clock,
+.fa-earth-asia,
+.fa-house {
+  color: #ff9832;
+  font-size: 15px;
+}
+
+.tour-card-desc-detail {
+  font-size: 13px;
+}
+
+.tour-card-desc-last {
+  padding: 3px 0;
+  background-color: #fff4b4;
+}
+
+.tour-card-price {
+  display: flex;
+  gap: 5px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.price-real {
+  font-weight: 300;
+  text-decoration: line-through;
+  color: #aeaeae;
+}
+
+.price-sale {
+  color: #ff3d3d;
+}
+
+.sale-percent {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  top: 5px;
+  left: 5px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: #ff9832;
+  font-size: 13px;
+  color: white;
+}
