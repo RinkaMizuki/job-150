@@ -289,3 +289,16 @@ a {
   font-size: 13px;
   color: white;
 }
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 15px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 15px;
+  background-color: #ff9832;
+}
